@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Personagem</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>        
+        <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="index.html">Portões</a>
+                <a class="cabecalho__menu__link" href="about.html">Quem somos?</a>
+                <a class="cabecalho__menu__link" href="login.html">Identifique-se</a>
+                <a class="cabecalho__menu__link" href="char.html">Criação</a>
+        </nav>
+    </header>
+
+    <main class="conteiner__terciario">
+        <section class="conteiner__estatistica">
+                    <div class="estatistica__atributo" data-atributo="atrib-agi">
+                        <p>Agilidade</p>
+                        <p data-modificador="agilidade">+5</p>
+                    </div>
+                    <div class="estatistica__atributo" data-atributo="atrib-car">
+                        <p>Carisma</p>
+                        <p data-modificador="carisma">-2</p>
+                    </div>
+                    <div class="estatistica__atributo" data-atributo="atrib-con">
+                        <p>Constituição</p>
+                        <p data-modificador="constituicao">+2</p>
+                    </div>
+                    <div class="estatistica__atributo" data-atributo="atrib-for">
+                        <p>Força</p>
+                        <p data-modificador="forca">+2</p>
+                    </div>
+                    <div class="estatistica__atributo" data-atributo="atrib-des">
+                        <p>Destreza</p>
+                        <p data-modificador="destreza">0</p>
+                    </div>
+                    <div class="estatistica__atributo" data-atributo="atrib-int">
+                        <p>Inteligência</p>
+                        <p data-modificador="inteligencia">+3</p>
+                    </div>
+                    <div class="estatistica__atributo" data-atributo="atrib-sab">
+                        <p>Sabedoria</p>
+                        <p data-modificador="sabedoria">+4</p>
+                    </div>
+        </section>
+
+        <section class="conteiner__equipamentos">
+            <form action="" class="equipamentos__montador">
+                <div class="equipamentos__montador__conteudo">
+                    <div class="montador__secao">
+                        <div class="montador__peca">
+                            <label for="" class="montador__peca__titulo">Agilidade</label>
+                            <div class="montador__controle">
+                                <button type="button" class="montador__controle__ajuste" data-controle="-" data-atributo="agilidade">-</button>
+                                <input type="text" class="montador__controle__contador" value="20" data-contador>
+                                <button type="button" class="montador__controle__ajuste" data-controle="+" data-atributo="agilidade">+</button>
+                            </div>
+                        </div>
+                        <div class="montador__peca">
+                            <label for="" class="montador__peca__titulo">Carisma</label>
+                            <div class="montador__controle">
+                                <button type="button" class="montador__controle__ajuste" data-controle="-" data-atributo="carisma">-</button>
+                                <input type="text" class="montador__controle__contador" value="6" data-contador> 
+                                <button type="button" class="montador__controle__ajuste" data-controle="+" data-atributo="carisma">+</button>
+                            </div>
+                        </div>
+                        <div class="montador__peca">
+                            <label for="" class="montador__peca__titulo">Constituição</label>
+                            <div class="montador__controle">
+                                <button type="button" class="montador__controle__ajuste" data-controle="-" data-atributo="constituicao">-</button>
+                                <input type="text" class="montador__controle__contador" value="14" data-contador>
+                                <button type="button" class="montador__controle__ajuste" data-controle="+" data-atributo="constituicao">+</button>
+                            </div>
+                        </div>
+                        <div class="montador__peca">
+                            <label for="" class="montador__peca__titulo">Força</label>
+                            <div class="montador__controle">
+                                <button type="button" class="montador__controle__ajuste" data-controle="-" data-atributo="forca">-</button>
+                                <input type="text" class="montador__controle__contador" value="14" data-contador>
+                                <button type="button" class="montador__controle__ajuste" data-controle="+" data-atributo="forca">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="montador__secao">
+                        <div class="montador__peca">
+                            <label for="" class="montador__peca__titulo">Destreza</label>
+                            <div class="montador__controle">
+                                <button type="button" class="montador__controle__ajuste" data-controle="-" data-atributo="destreza">-</button>
+                                <input type="text" class="montador__controle__contador" value="10" data-contador>
+                                <button type="button" class="montador__controle__ajuste" data-controle="+" data-atributo="destreza">+</button>
+                            </div>
+                        </div>
+                        <div class="montador__peca">
+                            <label for="" class="montador__peca__titulo">Inteligência</label>
+                            <div class="montador__controle">
+                                <button type="button" class="montador__controle__ajuste" data-controle="-" data-atributo="inteligencia">-</button>
+                                <input type="text" class="montador__controle__contador" value="16" data-contador>
+                                <button type="button" class="montador__controle__ajuste" data-controle="+" data-atributo="inteligencia">+</button>
+                            </div>
+                        </div>
+                        <div class="montador__peca">
+                            <label for="" class="montador__peca__titulo">Sabedoria</label>
+                            <div class="montador__controle">
+                                <button type="button" class="montador__controle__ajuste" data-controle="-" data-atributo="sabedoria">-</button>
+                                <input type="text" class="montador__controle__contador" value="18" data-contador>
+                                <button type="button" class="montador__controle__ajuste" data-controle="+" data-atributo="sabedoria">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <script src="./script/char.js"></script>
+    </main>
+
+    <footer class="rodape">
+        <p>Made by <strong>Stringmaster</strong></p>
+    </footer>
+</body>
+</html>

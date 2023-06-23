@@ -128,6 +128,7 @@ strong {
 }
 
 .rodape {
+    bottom: 0px;
     background-color: var(--cor-primaria);
     padding: 1%;
     border-top: 4px solid black;
@@ -137,7 +138,7 @@ strong {
 
 .conteiner__secundario {
     height: 30%;
-    margin-bottom: 9.2%;
+    margin-bottom: 15%;
     padding: 7%;
     display: flex;
     align-items: center;
@@ -174,6 +175,105 @@ strong {
 
 .conteiner__login__botao:hover {
     background-color: var(--cor-hover);
+}
+
+.conteiner__terciario {
+    height: 100vh;
+    padding: 7%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.conteiner__estatistica {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: auto;
+    width: 50%;
+    border-radius: 4%;
+    padding: 10px;
+    background-color: var(--cor-primaria);
+    font-size: var(--fonte-tamanho-titulo);
+}
+
+.estatistica__atributo {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    border-bottom: 3px solid black;
+    justify-content: space-between;
+}
+
+.conteiner__equipamentos {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: auto;
+    width: 100%;
+    border-radius: 4%;
+    background-color: var(--cor-primaria);
+    font-size: var(--fonte-tamanho-titulo);
+}
+
+.equipamentos__montador {
+    display: flex;
+    flex-direction: column;
+}
+
+.equipamentos__montador__conteudo {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+}
+
+.montador__secao {
+    display: flex;
+    flex-direction: column;
+}
+
+.montador__peca {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+.montador__peca__titulo {
+
+}
+
+.montador__controle {
+    display: flex;
+    flex-direction: row;
+}
+
+.montador__controle__ajuste {
+    width: 20%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-size: var(--fonte-tamanho-texto);
+    padding: 5%;
+}
+
+.montador__controle__ajuste:hover {
+    background-color: var(--cor-hover);
+}
+
+.montador__controle__contador {
+    margin: 5%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font: var(--fonte-principal);
+    font-size: 0.5em;
+}
+
+.producao {
+    width: auto;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-size: var(--fonte-tamanho-texto);
+    font: var(--fonte-principal);
 }
 
 @media (max-width: 600px) {

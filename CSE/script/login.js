@@ -1,21 +1,18 @@
-var input = document.getElementById("user");
-var input2 = document.getElementById("senha");
+let input = document.getElementById("user");
+let input2 = document.getElementById("senha");
 
 const user = ["june", "pakiru", "gay"];
 const senha = ["facadamaldada", "pipokapakill", "sougay"];
 
 function loga() {
     if (user.includes(input.value)) {
-        if (input2.value==senha[user.indexOf(input.value)]) {
-            alert("Senha correta.");
-        }
-        else {
-            alert("Senha errada.");
-        }
+        alert(input2.value===senha[user.indexOf(input.value)] ? "Senha correta" : "Senha incorreta") 
     }
     else {
         alert("Usuário não detectado. Deseja criar uma nova conta?");
     }
+    input.value = "";
+    input2.value = "";
 }
 
 function mostra() {
@@ -24,7 +21,7 @@ function mostra() {
     input2.value = "";
 }
 
-var button = document.getElementById("logar");
+let button = document.getElementById("logar");
 
 button.onclick = loga;
 
