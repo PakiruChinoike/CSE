@@ -18,9 +18,14 @@
         </header>
         <main class="conteiner__secundario">
             <section class="conteiner__login">
-                <input class="conteiner__login__input" id="user" type="text">
-                <input class="conteiner__login__input" id="senha" type="text">
-                <button class="conteiner__login__botao" id="logar" type="button">Logar</button>
+                <input class="conteiner__login__input" id="user" type="text" data-input="input">
+                <input class="conteiner__login__input" id="senha" type="text" data-input="input">
+                <div data-mensagem="invisivel">
+                    <p id="mensagem">Bom dia</p>
+                </div>
+                <div class="botoes">
+                    <button class="conteiner__login__botao" id="logar" type="button" data-botao="visivel">Logar</button>
+                </div>
                 <script type="text/javascript" src="./script/login.js"></script>
             </section>
         </main>

@@ -163,9 +163,18 @@ strong {
     font-size: var(--fonte-tamanho-texto)
 }
 
-.conteiner__login__botao {
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15%;
+}
+
+[data-botao="visivel"] {
     border: 2px solid black;
-    width: 15%;
+    display: block;
+    width: auto;
+    padding: 10%;
     margin-top: 7%;
     margin-bottom: 4%; 
     background-color: var(--cor-secundaria);
@@ -173,8 +182,26 @@ strong {
     font-size: var(--fonte-tamanho-texto)
 }
 
-.conteiner__login__botao:hover {
+[data-botao="invisivel"] {
+    display: none;
+}
+
+[data-botao="visivel"]:hover {
     background-color: var(--cor-hover);
+}
+
+[data-mensagem="visivel"] {
+    border: 5px solid black;
+    width: auto;
+    margin-top: 7%;
+    border-radius: 4%;
+    padding: 10px;
+    background-color: var(--cor-primaria);
+    font-size: var(--fonte-tamanho-texto);
+}
+
+[data-mensagem="invisivel"] {
+    display: none;
 }
 
 .conteiner__terciario {
@@ -237,10 +264,6 @@ strong {
     flex-direction: column;
     margin: 5%;
     justify-content: space-between;
-}
-
-.montador__peca__titulo {
-
 }
 
 .montador__controle {
