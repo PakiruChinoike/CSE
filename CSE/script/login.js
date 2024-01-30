@@ -4,8 +4,8 @@ const mensagem = document.querySelector("[data-mensagem]")
 let inputSenha = document.querySelector("#senha").value
 let inputUser = document.querySelector("#user").value
 
-const user = ["june", "pakiru", "gay"];
-const senha = ["facadamaldada", "pipokapakill", "sougay"];
+const user = ["june", "test3", "test"];
+const senha = ["facadamaldada", "pipokap", "password"];
 
 function loga() {
     if (user.includes(toString(inputUser))) {
